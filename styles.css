@@ -1,0 +1,57 @@
+body{
+  background: linear-gradient(to right,#08142a,#1f58c3);
+  color: #f3e1e1;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+h1{
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+#board{
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  grid-template-rows: repeat(3,100px);
+  gap: 8px;
+  justify-content: center;
+}
+.cell{
+  background: #050c19;
+  border: 2px solid #0d4bbe;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cell.X{
+  color: rgba(208, 4, 4, 0.998);
+}
+.cell.O{
+  color: #5fec07;
+}
+.cell:hover{
+  background: #a366f4;
+}
+.cell.winner{
+  background: #eff5a3;
+  color: rgb(37, 45, 4);
+}
+#status{
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+button{
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  background: #aeb27c;
+  color: #250202;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover{
+  background: #16a861;
+}
